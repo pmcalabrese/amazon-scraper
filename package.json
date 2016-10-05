@@ -1,0 +1,27 @@
+{
+  "name": "amazon-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "script",
+    "for",
+    "scrape",
+    "product",
+    "from",
+    "amazon",
+    "websites"
+  ],
+  "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "money": "^0.2.0",
+    "promise": "^7.1.1",
+    "text-table": "^0.2.0",
+    "x-ray": "^2.3.0"
+  }
+}
