@@ -7,21 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "script",
-    "for",
     "scrape",
-    "product",
-    "from",
+    "scraping",
     "amazon",
-    "websites"
+    "prices"
   ],
   "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.0.1",
-    "money": "^0.2.0",
+    "cli-table": "^0.3.1",
     "promise": "^7.1.1",
-    "text-table": "^0.2.0",
+    "request": "^2.75.0",
     "x-ray": "^2.3.0"
   }
 }
