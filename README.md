@@ -1,6 +1,6 @@
 # Amazon scraper
 
-# Install
+## Install
 
 You need to have [Node.JS](https://nodejs.org/en/) installed;
 
