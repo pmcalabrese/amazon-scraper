@@ -1,5 +1,7 @@
 # Amazon scraper
 
+Price scraper for amazon website powered by [Node.JS](https://nodejs.org/en/) [x-ray](https://github.com/lapwinglabs/x-ray) Promises and passion.
+
 ![amazon-scraper-table](amazon-scraper.png)
 
 ## Install
