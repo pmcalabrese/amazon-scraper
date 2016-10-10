@@ -2,10 +2,10 @@
 
 # Install
 
-You need to have Node installed. Clone the repo and run
+You need to have [Node.JS](https://nodejs.org/en/) installed;
 
-`npm install`
+Clone the repo and run and from main folder run
 
-and from the root folder run `npm start`
+`npm install` and after `npm start` for run the scraper
 
-This is a price scraper for Amazon website ( .co.uk, .it and .de). It generate a table when run or can write price in a table. If price are not in euro will be converted in euro (only pound is supported)
+This is a price scraper for *Amazon website* ( .co.uk, .it and .de). It generates a table in the terminal. If price are not in euro they will be converted in euro (for now only pound for amazon.co.uk website is supported)
