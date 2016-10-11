@@ -1,15 +1,10 @@
-var Xray = require('x-ray');
-var xray = Xray();
-var Table = require('cli-table');
-var Promise = require('promise');
-var request = require('request');
-var numeral = require('numeral');
+const Xray = require('x-ray');
+const xray = Xray();
+const Table = require('cli-table');
+const Promise = require('promise');
+const request = require('request');
+const numeral = require('numeral');
 const config = require('./config.json');
-
-const file_path = './price.txt';
-
-var price_table = [];
-var i = 0;
 
 function exchange_rate(from_currency, to_currency, cb) {
     request('http://api.fixer.io/latest?base='+ from_currency +'&symbols='+ to_currency, function (error, response, body) {
