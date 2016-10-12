@@ -4,7 +4,6 @@ const Table = require('cli-table');
 const Promise = require('promise');
 const request = require('request');
 const numeral = require('numeral');
-const config = require('./config.json');
 
 function exchange_rate(from_currency, to_currency, cb) {
     request('http://api.fixer.io/latest?base='+ from_currency +'&symbols='+ to_currency, function (error, response, body) {
@@ -19,9 +18,9 @@ function euroUnformatter(text) {
     return numeral().unformat(new_text)
 }
 
-function scrape(language) {
+function scrape(language, product_url) {
     return new Promise(function (resolve, reject) {
-        xray('https://www.amazon.' + language + config.product_url, {
+        xray('https://www.amazon.' + language + product_url, {
             price: '#priceblock_ourprice',
             product_name: '#productTitle'
         })(function(err, data) {
@@ -53,19 +52,6 @@ function sortByPrice(a, b) {
   return 0;
 }
 
-// Build promises array
-var scrape_arr = []
-config.lang.forEach(function(language) {
-    scrape_arr.push(scrape(language))
-})
-
-// When all request are done
-Promise.all(scrape_arr).then(function(data) {
-    printTable(data);
-}, function(err) {
-    console.log(err);
-})
-
 function printTable(data) {
     data.sort(sortByPrice);
     var table = new Table({
@@ -81,3 +67,18 @@ function printTable(data) {
     })
     console.log(table.toString())
 }
+
+module.exports = function(config_json) {
+
+    const config = require(config_json);
+    // Build promises array
+    var scrape_arr = []
+    config.lang.forEach(function(language) {
+        scrape_arr.push(scrape(language, config.product_url))
+    })
+
+    return {
+        printTable: printTable,
+        scraper: Promise.all(scrape_arr)
+    }
+};
