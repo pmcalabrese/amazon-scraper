@@ -16,9 +16,9 @@ Use `config.json` for set the URL of the product and which amazon domains you wa
 
 A price scraper for *Amazon website* ( .co.uk, .it and .de). It generates a table of prices for the same product in the terminal. If prices are not in Euro they will be converted in Euro (for now only pound for amazon.co.uk website is supported)
 
-## Usage example
+## How to use it
 
-Create a config file with the Amazon product url and the amazon websites domain (www.amazon.de, www.amazon.it, www.amazon.co.uk, www.amazon.fr)
+Create a `config.json` file with the Amazon product_url and the amazon websites domain (www.amazon.de, www.amazon.it, www.amazon.co.uk, www.amazon.fr)
 
 `config.json`
 ```json
