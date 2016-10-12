@@ -1,6 +1,6 @@
 {
   "name": "amazon-scraper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A price scraper for Amazon",
   "main": "index.js",
   "scripts": {
