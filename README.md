@@ -46,4 +46,4 @@ amazon_scraper.scraper.then(function(data) {
 });
 ```
 
-this example is in the `example` folder in the repo
+You can find this code in the [example](https://github.com/pmcalabrese/amazon-scraper/tree/master/example) folder in the repo.
