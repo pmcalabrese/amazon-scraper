@@ -68,9 +68,7 @@ function printTable(data) {
     console.log(table.toString())
 }
 
-module.exports = function(config_json) {
-
-    const config = require(config_json);
+module.exports = function(config) {
     // Build promises array
     var scrape_arr = []
     config.lang.forEach(function(language) {
