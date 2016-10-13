@@ -28,11 +28,11 @@ Create a `config.json` file with the Amazon product_url and the amazon websites 
 }
 ```
 
-Create an amazon scraper passing the config object ´,
+Create an amazon scraper passing the config object, the `amazon_scraper` has two methods:
 
-*scraper* is a promise that return data
+**scraper** : a promise that return data
 
-*printTable* is an helper function for display data in a table in the command line
+**printTable** : an helper function for display data in a table in the command line
 
 `index.js`
 ```javascript
