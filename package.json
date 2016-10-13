@@ -1,6 +1,6 @@
 {
   "name": "amazon-scraper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A price scraper for Amazon",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   },
   "repository": {
     "url": "https://github.com/pmcalabrese/amazon-scraper",
+    "email" : "pm.calabrese@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pmcalabrese/amazon-scraper/issues",
     "email" : "pm.calabrese@gmail.com"
   },
   "keywords": [
