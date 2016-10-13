@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "amazon-scraper": "0.0.1"
+    "amazon-scraper": "~0.0.1"
   }
 }

@@ -28,7 +28,7 @@ Create a `config.json` file with the Amazon product_url and the amazon websites 
 }
 ```
 
-Create an amazon scraper passing the config.json path,
+Create an amazon scraper passing the config object ´,
 
 *scraper* is a promise that return data
 
@@ -36,14 +36,14 @@ Create an amazon scraper passing the config.json path,
 
 `index.js`
 ```javascript
-var AmazonScraper = require('amazon-scraper')
+const AmazonScraper = require('amazon-scraper')
+const config = require('./config.json')
 
-var amazon_scraper = AmazonScraper('./config.json');
+const amazon_scraper = AmazonScraper(config);
 
 amazon_scraper.scraper.then(function(data) {
     amazon_scraper.printTable(data)
 });
-
 ```
 
 this example is in the `example` folder in the repo
