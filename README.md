@@ -2,6 +2,8 @@
 
 A price scraper for amazon website powered by [Node.JS](https://nodejs.org/en/) [x-ray](https://github.com/lapwinglabs/x-ray) Promises and passion.
 
+[Try it out!](https://runkit.com/pmcalabrese/runkit-npm-amazon-scraper)
+
 ![amazon-scraper-table](amazon-scraper.png)
 
 ## Install
